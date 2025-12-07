@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "phone": "vite --host",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .ts,.tsx,.vue src --max-warnings 0",
