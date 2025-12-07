@@ -9,33 +9,31 @@
   >
     <div
       v-if="open"
-      class="fixed top-0 left-0 w-full h-1/2 bg-secondary font-medium text-white
-             flex flex-col items-center justify-center"
+      class="bg-secondary fixed top-0 left-0 flex h-1/2 w-full flex-col items-center justify-center font-medium text-white"
     >
-      <ul class="text-xl space-y-5 text-center">
-        <li class="border-b-2" v-for="item in items" :key="item.title"><a :href="item.link">{{ item.title }}</a></li>
+      <ul class="space-y-5 text-center text-xl">
+        <li class="border-b-2" v-for="item in items" :key="item.title">
+          <a :href="item.link">{{ item.title }}</a>
+        </li>
       </ul>
       <button @click="close" class="absolute top-6 right-3">
-        <FontAwesomeIcon :icon="['fas', 'times']" class="w-6! h-6! text-white" />
+        <FontAwesomeIcon :icon="['fas', 'times']" class="h-6! w-6! text-white" />
       </button>
-
     </div>
   </transition>
 </template>
 
 <script setup lang="ts">
-
 interface Item {
-    title: string;
-    link: string;
+  title: string;
+  link: string;
 }
 
-const { items, open } = defineProps<{ items: Item[], open: boolean }>();
+const { items, open } = defineProps<{ items: Item[]; open: boolean }>();
 
 const emit = defineEmits(['close']);
 
 function close() {
-    emit('close');
+  emit('close');
 }
-
 </script>
