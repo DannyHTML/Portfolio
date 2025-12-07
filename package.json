@@ -15,7 +15,7 @@
   "lint-staged": {
     "*.{ts,tsx,vue,js,css,scss,html}": [
       "npm run format",
-      "eslint --fix --ext .ts,.tsx,.vue src"
+      "npm run lint:fix"
     ]
   },
   "dependencies": {
