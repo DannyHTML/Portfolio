@@ -16,7 +16,7 @@
         <li class="border-b-2" v-for="item in items" :key="item.title"><a :href="item.link">{{ item.title }}</a></li>
       </ul>
       <button @click="close" class="absolute top-6 right-3">
-        <FontAwesomeIcon :icon="['fas', 'close']" class="w-6! h-6! text-white" />
+        <FontAwesomeIcon :icon="['fas', 'times']" class="w-6! h-6! text-white" />
       </button>
 
     </div>
@@ -30,7 +30,7 @@ interface Item {
     link: string;
 }
 
-const items = defineProps<{ items: Item[] }>();
+const { items, open } = defineProps<{ items: Item[], open: boolean }>();
 
 const emit = defineEmits(['close']);
 

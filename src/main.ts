@@ -3,9 +3,9 @@ import './style.css'
 import App from './App.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faBars, faClose)
+library.add(faBars, faTimes)
 
 const app = createApp(App)
 

@@ -1,5 +1,5 @@
 <template>
-    <a :href="item.link" class="border py-1 px-3 rounded-2xl inline-block text-center">
+    <a :href="item.link" class="border py-1 text-lg font-medium px-3 rounded-2xl inline-block text-center">
       {{ item.title }}
     </a>
 </template>
