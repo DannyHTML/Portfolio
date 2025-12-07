@@ -1,13 +1,13 @@
 <template>
   <header class="bg-primary">
-    <div class="container text-white flex justify-between items-center  h-20">
-          <img src="../../assets/logo.png" class="w-40" alt="Logo Danny Jager" />
+    <div class="container flex h-20 items-center justify-between text-white">
+      <img src="../../assets/logo.png" class="w-40" alt="Logo Danny Jager" />
 
       <template v-if="isMobile">
-            <button @click="open = !open">
-        <FontAwesomeIcon :icon="['fas', 'bars']" class="h-5! w-5!" />
-    </button>
-    <MobileMenu :open="open" @close="open = false" :items="items" />
+        <button @click="open = !open">
+          <FontAwesomeIcon :icon="['fas', 'bars']" class="h-5! w-5!" />
+        </button>
+        <MobileMenu :open="open" :items="items" @close="open = false" />
       </template>
 
       <template v-else>
@@ -19,29 +19,48 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
-import MobileMenu from './MobileMenu.vue'
-import DesktopMenu from './DesktopMenu.vue'
-import ContactButton from './ContactButton.vue'
+import { onMounted, ref } from 'vue';
+import MobileMenu from './MobileMenu.vue';
+import DesktopMenu from './DesktopMenu.vue';
+import ContactButton from './ContactButton.vue';
 
 const isMobile = ref(false);
 
 const open = ref(false);
 
-const items = [{title: 'Home', link: '/'}, {title: 'Skills', link: '/skills'}, {title: 'Projects', link: '/projects'}, {title: 'About', link: '/about'}, {title: 'Contact', link: '/contact'}];
+const items = [
+  {
+    title: 'Home',
+    link: '/',
+  },
+  {
+    title: 'Skills',
+    link: '/skills',
+  },
+  {
+    title: 'Projects',
+    link: '/projects',
+  },
+  {
+    title: 'About',
+    link: '/about',
+  },
+  {
+    title: 'Contact',
+    link: '/contact',
+  },
+];
 
-const contactButton = items.find(i => i.title === 'Contact');
-const menuItems = items.filter(i => i.title !== 'Contact');
+const contactButton = items.find((i) => i.title === 'Contact');
+const menuItems = items.filter((i) => i.title !== 'Contact');
 console.log(contactButton);
 
-
 onMounted(() => {
-    const checkMobile = () => {
-        isMobile.value = window.innerWidth < 640;
-    };
+  const checkMobile = () => {
+    isMobile.value = window.innerWidth < 640;
+  };
 
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
+  checkMobile();
+  window.addEventListener('resize', checkMobile);
 });
-
 </script>
