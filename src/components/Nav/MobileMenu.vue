@@ -12,11 +12,11 @@
       class="bg-secondary fixed top-0 left-0 flex h-1/2 w-full flex-col items-center justify-center font-medium text-white"
     >
       <ul class="space-y-5 text-center text-xl">
-        <li class="border-b-2" v-for="item in items" :key="item.title">
+        <li v-for="item in items" :key="item.title" class="border-b-2">
           <a :href="item.link">{{ item.title }}</a>
         </li>
       </ul>
-      <button @click="close" class="absolute top-6 right-3">
+      <button class="absolute top-6 right-3" @click="close">
         <FontAwesomeIcon :icon="['fas', 'times']" class="h-6! w-6! text-white" />
       </button>
     </div>
