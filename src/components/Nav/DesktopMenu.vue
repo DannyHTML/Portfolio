@@ -1,6 +1,6 @@
 <template>
   <ul
-    class="bg-medium-purple/80 border-medium-purple flex gap-4 rounded-2xl border-2 px-5 py-2 text-lg font-medium md:px-10 lg:text-xl"
+    class="bg-medium-purple/80 border-medium-purple flex gap-4 rounded-2xl border-2 px-5 py-2 text-lg font-medium md:gap-10 md:px-10 lg:text-xl"
   >
     <li v-for="item in items" :key="item.title">
       <a
