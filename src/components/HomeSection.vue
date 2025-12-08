@@ -1,17 +1,14 @@
 <template>
   <!-- TODO: Is headerHeight really needed? -->
 
-  <div
-    class="container flex items-center justify-center text-center"
-    :style="{ height: `calc(50dvh` }"
-  >
-    <div class="">
+  <div class="container flex items-center justify-center text-center">
+    <div class="my-10">
       <h1 id="welcomeMessage" class="mb-8 block text-5xl font-bold md:text-6xl"></h1>
 
       <div
         v-motion
         :initial="{
-          x: -100, // way off-screen (adjust as needed)
+          x: -100,
           opacity: 0,
         }"
         :enter="{
@@ -55,13 +52,13 @@ const typeWrite = () => {
     greeting = 'Good evening!';
   }
 
-  const greetingText = 'My name is '; // Static text after greeting
+  const greetingText = 'My name is ';
   const authorText = 'Danny Jager';
   const authorColor = 'orange';
 
-  let i = 0; // index for greeting
-  let j = 0; // index for greetingText
-  let k = 0; // index for authorText
+  let i = 0;
+  let j = 0;
+  let k = 0;
 
   function typeGreeting() {
     if (i < greeting.length) {
@@ -94,7 +91,7 @@ const typeWrite = () => {
       k++;
       setTimeout(() => typeAuthor(span), speed);
     } else {
-      element!.innerHTML += '.'; // Add period at the end
+      element!.innerHTML += '.';
     }
   }
 
