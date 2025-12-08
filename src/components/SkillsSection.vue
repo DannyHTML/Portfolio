@@ -1,9 +1,9 @@
 <template>
   <div class="bg-primary py-20">
-    <h2 id="skills" class="mb-4 text-center text-4xl font-bold">Skills</h2>
+    <h2 id="skills" class="mb-6 text-center text-5xl font-bold">Skills</h2>
     <Carousel v-bind="carouselConfig" class="fade-left-and-right container">
       <Slide v-for="skill in skills" :key="skill.title">
-        <SkillCard class="carousel__item" :title="skill.title" :icon="skill.icon" />
+        <SkillCard :title="skill.title" :icon="skill.icon" />
       </Slide>
     </Carousel>
   </div>
@@ -27,14 +27,21 @@ import javascriptLogo from '../assets/javascript-logo.svg';
 import apiIcon from '../assets/api-logo.svg';
 
 const carouselConfig = {
-  itemsToShow: 2.5,
+  itemsToShow: 2,
   gap: 12,
   wrapAround: true,
   mouseDrag: true,
   mouseWheel: true,
   pauseAutoplayOnHover: true,
-  preventExcessiveDragging: true,
   autoplay: 1000,
+  breakpoints: {
+    768: {
+      itemsToShow: 2.5,
+    },
+    1000: {
+      itemsToShow: 3.5,
+    },
+  },
 };
 
 const skills = [
