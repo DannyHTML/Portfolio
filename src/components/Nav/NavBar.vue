@@ -1,11 +1,11 @@
 <template>
-  <header class="bg-primary">
+  <header id="header">
     <div class="container flex h-20 items-center justify-between text-white">
       <img src="../../assets/logo.png" class="w-40" alt="Logo Danny Jager" />
 
       <template v-if="isMobile">
         <button @click="open = !open">
-          <FontAwesomeIcon :icon="['fas', 'bars']" class="h-5! w-5!" />
+          <FontAwesomeIcon :icon="['fas', 'bars']" class="h-6! w-6!" />
         </button>
         <MobileMenu :open="open" :items="items" @close="open = false" />
       </template>
@@ -31,29 +31,28 @@ const open = ref(false);
 const items = [
   {
     title: 'Home',
-    link: '/',
+    link: '#header',
   },
   {
     title: 'Skills',
-    link: '/skills',
+    link: '#homeSection',
   },
   {
     title: 'Projects',
-    link: '/projects',
+    link: '#projects',
   },
   {
     title: 'About',
-    link: '/about',
+    link: '#about',
   },
   {
     title: 'Contact',
-    link: '/contact',
+    link: '#contact',
   },
 ];
 
 const contactButton = items.find((i) => i.title === 'Contact');
 const menuItems = items.filter((i) => i.title !== 'Contact');
-console.log(contactButton);
 
 onMounted(() => {
   const checkMobile = () => {
