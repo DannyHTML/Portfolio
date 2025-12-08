@@ -9,7 +9,7 @@
   >
     <div
       v-if="open"
-      class="bg-secondary fixed top-0 left-0 flex h-1/2 w-full flex-col items-center justify-center font-medium text-white"
+      class="bg-secondary drop-shadow-medium-purple fixed top-0 left-0 z-50 flex h-1/2 w-full flex-col items-center justify-center rounded-b-3xl font-medium text-white drop-shadow-lg"
     >
       <ul class="space-y-5 text-center text-xl">
         <li v-for="item in items" :key="item.title" class="border-b-2">

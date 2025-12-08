@@ -5,7 +5,7 @@
 
       <template v-if="isMobile">
         <button @click="open = !open">
-          <FontAwesomeIcon :icon="['fas', 'bars']" class="h-5! w-5!" />
+          <FontAwesomeIcon :icon="['fas', 'bars']" class="h-6! w-6!" />
         </button>
         <MobileMenu :open="open" :items="items" @close="open = false" />
       </template>
