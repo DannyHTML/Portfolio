@@ -1,7 +1,5 @@
 <template>
-  <!-- TODO: Is headerHeight really needed? -->
-
-  <div class="container flex items-center justify-center text-center">
+  <div class="z-10 container flex items-center justify-center text-center">
     <div class="my-10">
       <h1 id="welcomeMessage" class="mb-8 block text-5xl font-bold md:text-6xl"></h1>
 
@@ -31,10 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
 import { onMounted } from 'vue';
-
-const headerElementHeight = ref<number | undefined>(undefined);
 
 const typeWrite = () => {
   const speed = 50;
@@ -100,6 +95,5 @@ const typeWrite = () => {
 
 onMounted(() => {
   typeWrite();
-  headerElementHeight.value = document.querySelector('header')?.offsetHeight;
 });
 </script>
