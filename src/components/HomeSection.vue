@@ -1,19 +1,34 @@
 <template>
   <!-- TODO: Is headerHeight really needed? -->
 
-  <div class="container flex items-center justify-center" :style="{ height: `calc(50dvh` }">
+  <div
+    class="container flex items-center justify-center text-center"
+    :style="{ height: `calc(50dvh` }"
+  >
     <div class="">
-      <h1 id="welcomeMessage" class="block text-center text-5xl font-bold md:text-4xl"></h1>
+      <h1 id="welcomeMessage" class="mb-8 block text-5xl font-bold md:text-6xl"></h1>
 
-      <Motion
-        is="p"
-        class="mt-6 max-w-xl text-center text-lg md:text-xl"
-        preset="slideVisibleLeft"
-        delay="1000"
+      <div
+        v-motion
+        :initial="{
+          x: -100, // way off-screen (adjust as needed)
+          opacity: 0,
+        }"
+        :enter="{
+          x: [-600, 0, -10, 5, 0], // slide in → wiggle → settle
+          opacity: 1,
+          transition: {
+            duration: 1200,
+            type: 'keyframes',
+            easing: 'easeOut',
+            delay: 1000,
+          },
+        }"
+        class="text-lg md:text-xl"
       >
         Welcome to my portfolio! I am a passionate front-end developer. Please explore my work and
         get in touch.
-      </Motion>
+      </div>
     </div>
   </div>
 </template>
