@@ -5,6 +5,7 @@ import SkillsSection from './components/SkillsSection.vue';
 </script>
 
 <template>
+  <!-- TODO: I think I keep this layout? -->
   <main>
     <div class="backgroundImage relative min-h-screen">
       <NavBar />
