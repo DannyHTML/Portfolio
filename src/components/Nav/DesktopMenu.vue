@@ -5,7 +5,7 @@
     <li v-for="item in items" :key="item.title">
       <a
         :href="item.link"
-        class="relative after:absolute after:-bottom-0.5 after:left-1/2 after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-150 hover:after:w-full hover:after:-translate-x-1/2"
+        class="after:bg-accent hover:text-accent relative after:absolute after:-bottom-0.5 after:left-1/2 after:h-0.5 after:w-0 after:transition-all after:duration-150 hover:after:w-full hover:after:-translate-x-1/2"
         >{{ item.title }}
       </a>
     </li>

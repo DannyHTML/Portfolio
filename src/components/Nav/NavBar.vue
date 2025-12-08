@@ -1,5 +1,5 @@
 <template>
-  <header id="header">
+  <header id="home">
     <div class="container flex h-20 items-center justify-between text-white">
       <img src="../../assets/logo.png" class="w-40" alt="Logo Danny Jager" />
 
@@ -25,17 +25,16 @@ import DesktopMenu from './DesktopMenu.vue';
 import ContactButton from './ContactButton.vue';
 
 const isMobile = ref(false);
-
 const open = ref(false);
 
 const items = [
   {
     title: 'Home',
-    link: '#header',
+    link: '#home',
   },
   {
     title: 'Skills',
-    link: '#homeSection',
+    link: '#skills',
   },
   {
     title: 'Projects',
