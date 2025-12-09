@@ -8,6 +8,7 @@ import ProjectSection from './components/ProjectSection.vue';
 <template>
   <!-- TODO: I think I keep this layout? -->
   <!-- TODO: Need to implement a button up when you start scrolling. -->
+  <!-- TODO: Add meta description and keywords plus other SEO relevant tags like image in index.html -->
   <main>
     <div class="backgroundImage relative min-h-screen">
       <NavBar />
