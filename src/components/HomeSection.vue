@@ -49,7 +49,7 @@ const typeWrite = () => {
 
   const greetingText = 'My name is ';
   const authorText = 'Danny Jager';
-  const authorColor = 'orange';
+  const authorColor = 'var(--color-accent)';
 
   let i = 0;
   let j = 0;
