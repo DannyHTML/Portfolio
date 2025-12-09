@@ -7,6 +7,7 @@ import ProjectSection from './components/ProjectSection.vue';
 
 <template>
   <!-- TODO: I think I keep this layout? -->
+  <!-- TODO: Need to implement a button up when you start scrolling. -->
   <main>
     <div class="backgroundImage relative min-h-screen">
       <NavBar />
