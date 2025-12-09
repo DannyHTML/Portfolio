@@ -19,7 +19,7 @@
             delay: 1000,
           },
         }"
-        class="text-lg md:text-xl"
+        class="drop-shadow-primary text-lg font-medium drop-shadow-2xl md:text-xl"
       >
         Welcome to my portfolio! I am a passionate front-end developer. Please explore my work and
         get in touch.
