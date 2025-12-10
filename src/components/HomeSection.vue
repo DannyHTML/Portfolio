@@ -1,5 +1,5 @@
 <template>
-  <div class="z-10 container flex items-center justify-center text-center">
+  <div id="home" class="z-10 container flex items-center justify-center text-center">
     <div class="my-10">
       <h1 id="welcomeMessage" class="mb-8 block text-5xl font-bold md:text-6xl"></h1>
 
