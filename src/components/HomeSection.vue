@@ -1,5 +1,5 @@
 <template>
-  <div class="z-10 container flex items-center justify-center text-center">
+  <div id="home" class="z-10 container flex items-center justify-center text-center">
     <div class="my-10">
       <h1 id="welcomeMessage" class="mb-8 block text-5xl font-bold md:text-6xl"></h1>
 
@@ -19,7 +19,7 @@
             delay: 1000,
           },
         }"
-        class="text-lg md:text-xl"
+        class="drop-shadow-primary text-lg font-medium drop-shadow-2xl md:text-xl"
       >
         Welcome to my portfolio! I am a passionate front-end developer. Please explore my work and
         get in touch.
@@ -49,7 +49,7 @@ const typeWrite = () => {
 
   const greetingText = 'My name is ';
   const authorText = 'Danny Jager';
-  const authorColor = 'orange';
+  const authorColor = 'var(--color-accent)';
 
   let i = 0;
   let j = 0;

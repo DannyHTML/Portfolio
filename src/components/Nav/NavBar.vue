@@ -16,6 +16,7 @@
       </template>
     </div>
   </header>
+  <NavigateToTop />
 </template>
 
 <script setup lang="ts">
@@ -23,6 +24,7 @@ import { onMounted, ref } from 'vue';
 import MobileMenu from './MobileMenu.vue';
 import DesktopMenu from './DesktopMenu.vue';
 import ContactButton from './ContactButton.vue';
+import NavigateToTop from '../NavigateToTop.vue';
 
 const isMobile = ref(false);
 const open = ref(false);

@@ -3,10 +3,10 @@ import './style.css';
 import App from './App.vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes, faCircleUp } from '@fortawesome/free-solid-svg-icons';
 import { MotionPlugin } from '@vueuse/motion';
 
-library.add(faBars, faTimes);
+library.add(faBars, faTimes, faCircleUp);
 
 const app = createApp(App);
 
