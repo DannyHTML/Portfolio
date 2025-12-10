@@ -20,7 +20,8 @@
     </div>
   </div>
 
-  <!-- TODO: I NEED TO ADD MORE SKILLS, like PINIA for example etc.... -->
+  <!-- TODO: I NEED TO ADD MORE SKILLS, like Responsvise Design for example etc.... -->
+  <!-- TODO: Need to find a better logo for Responsive Web Design -->
 
   <!-- Pop-up modal -->
   <Transition
@@ -45,6 +46,7 @@ import typescripLogo from '../assets/typescript-logo.svg';
 import viteLogo from '../assets/vite-logo.svg';
 import npmLogo from '../assets/npm-logo.svg';
 import tailwindLogo from '../assets/tailwind-logo.svg';
+import responsiveWebDesignLogo from '../assets/responsive-web-design-logo.svg';
 import htmlLogo from '../assets/html-5-logo.svg';
 import cssLogo from '../assets/css-3-logo.svg';
 import magento2Logo from '../assets/magento-2-logo.svg';
@@ -81,6 +83,7 @@ const skills = [
   { title: 'Vue.js', icon: vueLogo },
   { title: 'Pinia', icon: piniaLogo },
   { title: 'TypeScript', icon: typescripLogo },
+  { title: 'Responsive Web Design', icon: responsiveWebDesignLogo },
   { title: 'Vite', icon: viteLogo },
   { title: 'NPM', icon: npmLogo },
   { title: 'Tailwind CSS', icon: tailwindLogo },
