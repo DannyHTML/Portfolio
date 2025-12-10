@@ -10,6 +10,8 @@ import ProjectSection from './components/ProjectSection.vue';
   <!-- TODO: Need to implement a button up when you start scrolling. -->
   <!-- TODO: Add meta description and keywords plus other SEO relevant tags like image in index.html -->
   <!-- TODO: A pop up to show all skills while you press a button? -->
+  <!-- TODO: I should not forgot to make a footer!!! -->
+
   <main>
     <div class="backgroundImage relative min-h-screen">
       <NavBar />
