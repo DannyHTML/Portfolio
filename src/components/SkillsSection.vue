@@ -21,7 +21,7 @@
   </div>
 
   <!-- TODO: I NEED TO ADD MORE SKILLS, like Responsvise Design for example etc.... -->
-  <!-- TODO: Need to find a better logo for Responsive Web Design -->
+  <!-- TODO: Need to find a better logo for Responsive Web Design, text also to long -->
 
   <!-- Pop-up modal -->
   <Transition
