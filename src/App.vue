@@ -11,6 +11,7 @@ import ProjectSection from './components/ProjectSection.vue';
   <!-- TODO: Add meta description and keywords plus other SEO relevant tags like image in index.html -->
   <!-- TODO: A pop up to show all skills while you press a button? -->
   <!-- TODO: I should not forgot to make a footer!!! -->
+  <!-- TODO: Also not forgot about making a clean ABOUT ME section -->
 
   <main>
     <div class="backgroundImage relative min-h-screen">
