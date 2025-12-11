@@ -3,6 +3,7 @@ import NavBar from './components/Nav/NavBar.vue';
 import HomeSection from './components/HomeSection.vue';
 import SkillsSection from './components/SkillsSection.vue';
 import ProjectSection from './components/ProjectSection.vue';
+import AboutMe from './components/AboutMe.vue';
 </script>
 
 <template>
@@ -23,6 +24,7 @@ import ProjectSection from './components/ProjectSection.vue';
     </div>
     <SkillsSection />
     <ProjectSection />
+    <AboutMe />
   </main>
 </template>
 
