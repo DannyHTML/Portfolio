@@ -57,15 +57,49 @@
         <!-- About me text -->
         <div class="mt-14 flex-1 md:mt-0">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sit blanditiis rerum
-            autem quidem. Aliquam modi nulla quibusdam, fugit dolore delectus amet fuga doloribus
-            error. Magnam exercitationem minus quaerat voluptates quam odio quae beatae rerum omnis.
-            Nulla id mollitia sed inventore porro? Magnam hic nemo, optio quia consequatur ea
-            reiciendis neque, est minus enim incidunt facere, facilis unde? Omnis facilis
-            repellendus consectetur a, error voluptatibus quibusdam exercitationem ratione suscipit
-            amet sequi modi reprehenderit pariatur eos cumque voluptas doloremque porro incidunt
-            dolorem aliquam! Consectetur ipsum illum nam libero repellendus, nesciunt ad temporibus,
-            porro aut necessitatibus quisquam nihil nobis cupiditate magni dolorem! lorem100
+            I’m a front-end developer with a strong focus on building clean, scalable, and
+            user-friendly web experiences. Originally self-taught, I later completed a
+            government-funded Front-End Development program in the Netherlands through Hacklab.frl,
+            which gave me a solid foundation and helped refine my development approach. I’ve been
+            living in the UK since October 2025, where I continue to grow both personally and
+            professionally. <br /><br />
+            After completing my training, I joined Fotocadeau B.V. as a Front-End Developer.
+            Fotocadeau is a company that handles everything in-house—from production to marketing to
+            IT—which gave me the opportunity to work closely with multiple teams and contribute
+            directly to business goals. <br /><br />
+            Within the IT team, I focused primarily on developing and maintaining more than 25
+            multilingual e-commerce websites built on Magento 2 and powered by PrismicIO as a
+            headless CMS. My responsibilities included translating Figma designs into fully
+            responsive interfaces, collaborating with marketing to evaluate feasibility and
+            timelines, and proposing my own ideas to improve usability and performance. <br /><br />
+            A large part of my work involved building reusable Prismic slices and custom types so
+            teams like Marketing and Sales could manage content efficiently without developer
+            involvement. I also worked on the integration layer between Magento 2 and PrismicIO
+            using PHTML, CSS/Tailwind, XML, and Alpine.js, and implemented front-end features in
+            both Magento 1 and Magento 2 when appropriate. <br /><br />
+            Some examples of my work include: <br /><br />
+          </p>
+          <ul>
+            <li class="list-inside list-disc">
+              Topdoek.nl – Created various reusable slices in Prismic that allowed Marketing to
+              control design and feature toggles.
+            </li>
+            <li class="list-inside list-disc">
+              NoBoringSuitcases.de / NoBoringSuitcases.nl – Developed custom Prismic types for the
+              Sales team, turning their design and content requirements into flexible, easy-to-use
+              components.
+            </li>
+          </ul>
+          <br />
+          <p>
+            Topdoek.nl – Created various reusable slices in Prismic that allowed Marketing to
+            control design and feature toggles. NoBoringSuitcases.de / NoBoringSuitcases.nl –
+            Developed custom Prismic types for the Sales team, turning their design and content
+            requirements into flexible, easy-to-use components.
+            <br /><br />
+            I enjoy transforming ideas into functional, maintainable interfaces, collaborating
+            across teams, and building systems that are as enjoyable to work with as they are to
+            use.
           </p>
         </div>
       </div>

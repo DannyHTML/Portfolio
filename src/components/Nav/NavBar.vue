@@ -10,6 +10,8 @@
         <MobileMenu :open="open" :items="items" @close="open = false" />
       </template>
 
+      <!-- TODO: I can remove the contactButton logic since I will be making a dedicated Download CV button -->
+
       <template v-else>
         <DesktopMenu :items="menuItems" />
         <ContactButton :item="contactButton!" />
@@ -47,13 +49,13 @@ const items = [
     link: '#about',
   },
   {
-    title: 'Contact',
+    title: 'Download CV',
     link: '#contact',
   },
 ];
 
-const contactButton = items.find((i) => i.title === 'Contact');
-const menuItems = items.filter((i) => i.title !== 'Contact');
+const contactButton = items.find((i) => i.title === 'Download CV');
+const menuItems = items.filter((i) => i.title !== 'Download CV');
 
 onMounted(() => {
   const checkMobile = () => {

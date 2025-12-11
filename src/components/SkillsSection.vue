@@ -55,6 +55,7 @@ import gitLogo from '../assets/git-logo.svg';
 import gitlabLogo from '../assets/gitlab-logo.svg';
 import githubLogo from '../assets/github-logo.svg';
 import javascriptLogo from '../assets/javascript-logo.svg';
+import alpineLogo from '../assets/alpine-js-logo.svg';
 import apiLogo from '../assets/api-logo.svg';
 import piniaLogo from '../assets/pinia-logo.svg';
 import PopUpModal from './PopUpModal.vue';
@@ -89,6 +90,7 @@ const skills = [
   { title: 'Tailwind CSS', icon: tailwindLogo },
   { title: 'HTML', icon: htmlLogo },
   { title: 'JavaScript', icon: javascriptLogo },
+  { title: 'Alpine.js', icon: alpineLogo },
   { title: 'CSS', icon: cssLogo },
   { title: 'Magento 2', icon: magento2Logo },
   { title: 'Prismic', icon: prismicLogo },
