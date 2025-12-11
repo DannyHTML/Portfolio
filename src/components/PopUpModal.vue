@@ -4,9 +4,6 @@
     class="fixed top-0 left-0 z-50 flex h-full w-full items-center justify-center bg-black/70"
   >
     <!-- Modal box -->
-    <!-- TODO: MAYBE do it as below since I do like how I made the design right now. -->
-    <!-- TODO: I want to make this modal into a way where it shows the skills in code language -->
-    <!-- TODO: Look at the image in the github issue -->
     <div
       ref="target"
       class="bg-primary border-medium-purple relative mx-4 w-full max-w-2xl rounded-lg border-2 p-4"
