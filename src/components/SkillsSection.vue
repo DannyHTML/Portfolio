@@ -83,7 +83,7 @@ const skills = [
   { title: 'Vue.js', icon: vueLogo },
   { title: 'Pinia', icon: piniaLogo },
   { title: 'TypeScript', icon: typescripLogo },
-  { title: 'Responsive Web Design', icon: responsiveWebDesignLogo },
+  { title: 'Responsive', icon: responsiveWebDesignLogo },
   { title: 'Vite', icon: viteLogo },
   { title: 'NPM', icon: npmLogo },
   { title: 'Tailwind CSS', icon: tailwindLogo },
