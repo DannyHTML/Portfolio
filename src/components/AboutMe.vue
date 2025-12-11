@@ -84,6 +84,7 @@
             <a
               class="bg-medium-purple inline-block transform cursor-pointer rounded-2xl border border-black px-6 py-2 text-lg font-medium shadow-[4px_4px_0_0_rgba(0,0,0,1)] transition hover:-translate-y-1 hover:shadow-[6px_6px_0_0_rgba(0,0,0,1)] active:translate-y-0 active:shadow-[4px_4px_0_0_rgba(0,0,0,1)]"
             >
+              <FontAwesomeIcon :icon="['fas', 'download']" class="mr-1 inline-block h-5 w-5" />
               Download CV
             </a>
           </div>
