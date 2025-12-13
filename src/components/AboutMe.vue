@@ -70,10 +70,10 @@
             >, which gave me a solid foundation and helped refine my development approach. I’ve been
             living in the UK since October 2025, where I continue to grow both personally and
             professionally. <br /><br />
-            After completing my training, I joined Fotocadeau B.V. as a Front-End Developer.
-            Fotocadeau is a company that handles everything in-house—from production to marketing to
-            IT—which gave me the opportunity to work closely with multiple teams and contribute
-            directly to business goals. <br /><br />
+            After completing my training, I joined CanvasCompany.nl B.V. as a Front-End Developer.
+            CanvasCompany.nl B.V. is a company that handles everything in-house—from production to
+            marketing to IT—which gave me the opportunity to work closely with multiple teams and
+            contribute directly to business goals. <br /><br />
             Within the IT team, I focused primarily on developing and maintaining more than 25
             multilingual e-commerce websites built on Magento 2 and powered by PrismicIO as a
             headless CMS. My responsibilities included translating Figma designs into fully
