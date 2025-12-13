@@ -4,6 +4,7 @@ import HomeSection from './components/HomeSection.vue';
 import SkillsSection from './components/SkillsSection.vue';
 import ProjectSection from './components/ProjectSection.vue';
 import AboutMe from './components/AboutMe.vue';
+import FooterSection from './components/FooterSection.vue';
 </script>
 
 <template>
@@ -26,6 +27,7 @@ import AboutMe from './components/AboutMe.vue';
     <SkillsSection />
     <ProjectSection />
     <AboutMe />
+    <FooterSection />
   </main>
 </template>
 

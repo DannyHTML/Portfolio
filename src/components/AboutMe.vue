@@ -1,41 +1,42 @@
 <template>
-  <div class="bg-primary py-20">
+  <div class="bg-primary pt-20 pb-10 md:py-20">
     <div class="container">
       <h2 id="about" class="mb-10 text-center text-5xl font-bold">About Me</h2>
       <div class="md:flex md:gap-20">
         <div class="flex flex-1 items-center justify-center">
           <div class="border-medium-purple relative rounded-full border-2">
+            <!-- TODO: Maybe a bit bigger on desktop? -->
             <img
               src="../assets/danny.jpg"
               alt="Picture of Danny Jager"
-              class="h-96 rounded-full object-cover p-5"
+              class="h-96 rounded-full object-cover p-5 xl:h-[500px]"
             />
             <span>
               <img
                 src="../assets/vue-logo.svg"
                 alt="Vue logo"
-                class="absolute top-12 right-0 w-12 rotate-20"
+                class="absolute top-12 right-0 w-12 rotate-20 xl:right-5"
               />
             </span>
             <span>
               <img
                 src="../assets/tailwind-logo.svg"
                 alt="Tailwind logo"
-                class="absolute top-12 left-0 w-12"
+                class="absolute top-12 left-0 w-12 xl:left-5"
               />
             </span>
             <span>
               <img
                 src="../assets/pinia-logo.svg"
                 alt="Pinia logo"
-                class="absolute right-0 bottom-10 w-12 -rotate-20"
+                class="absolute right-0 bottom-10 w-12 -rotate-2 xl:right-3"
               />
             </span>
             <span>
               <img
                 src="../assets/html-5-logo.svg"
                 alt="HTML logo"
-                class="absolute bottom-0 left-9 w-12 -rotate-20"
+                class="absolute bottom-0 left-9 w-12 -rotate-20 xl:left-16"
               />
             </span>
             <span>
@@ -91,8 +92,8 @@
           teams like Marketing and Sales could manage content efficiently without developer
           involvement. I also worked on the integration layer between Magento 2 and PrismicIO using
           PHTML, CSS/Tailwind, XML, and Alpine.js, and implemented front-end features in both
-          Magento 1 and Magento 2 when appropriate. <br /><br />
-          Some examples of my work include: <br /><br />
+          Magento 1 and Magento 2 when appropriate.
+          <b class="my-4 block"> Some examples of my work include: </b>
         </p>
         <ul>
           <li class="list-inside list-disc">
@@ -128,11 +129,6 @@
         </ul>
         <br />
         <p>
-          Topdoek.nl – Created various reusable slices in Prismic that allowed Marketing to control
-          design and feature toggles. NoBoringSuitcases.de / NoBoringSuitcases.nl – Developed custom
-          Prismic types for the Sales team, turning their design and content requirements into
-          flexible, easy-to-use components.
-          <br /><br />
           I enjoy transforming ideas into functional, maintainable interfaces, collaborating across
           teams, and building systems that are as enjoyable to work with as they are to use.
         </p>
