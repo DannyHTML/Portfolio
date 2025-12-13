@@ -10,11 +10,10 @@
         <MobileMenu :open="open" :items="items" @close="open = false" />
       </template>
 
-      <!-- TODO: I can remove the contactButton logic since I will be making a dedicated Download CV button -->
-
       <template v-else>
-        <DesktopMenu :items="menuItems" />
-        <ContactButton :item="contactButton!" />
+        <DesktopMenu :items="items" />
+        <!-- TODO: Upload my CV for this component -->
+        <DownloadButton :padding="'px-1.5 py-2 md:px-3 xl:px-6'"> Download CV </DownloadButton>
       </template>
     </div>
   </header>
@@ -25,8 +24,8 @@
 import { onMounted, ref } from 'vue';
 import MobileMenu from './MobileMenu.vue';
 import DesktopMenu from './DesktopMenu.vue';
-import ContactButton from './ContactButton.vue';
 import NavigateToTop from '../NavigateToTop.vue';
+import DownloadButton from '../DownloadButton.vue';
 
 const isMobile = ref(false);
 const open = ref(false);
@@ -48,14 +47,7 @@ const items = [
     title: 'About',
     link: '#about',
   },
-  {
-    title: 'Download CV',
-    link: '#contact',
-  },
 ];
-
-const contactButton = items.find((i) => i.title === 'Download CV');
-const menuItems = items.filter((i) => i.title !== 'Download CV');
 
 onMounted(() => {
   const checkMobile = () => {

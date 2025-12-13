@@ -15,6 +15,7 @@
         <li v-for="item in items" :key="item.title" class="border-b-2">
           <a :href="item.link" @click="close">{{ item.title }}</a>
         </li>
+        <DownloadButton :download-link="'/path/to/cv.pdf'"> Download CV </DownloadButton>
       </ul>
       <button class="absolute top-6 right-3" @click="close">
         <FontAwesomeIcon :icon="['fas', 'times']" class="h-6! w-6! text-white" />
@@ -30,6 +31,8 @@
 </template>
 
 <script setup lang="ts">
+import DownloadButton from '../DownloadButton.vue';
+
 interface Item {
   title: string;
   link: string;
