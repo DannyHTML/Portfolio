@@ -3,6 +3,7 @@ import NavBar from './components/Nav/NavBar.vue';
 import HomeSection from './components/HomeSection.vue';
 import SkillsSection from './components/SkillsSection.vue';
 import ProjectSection from './components/ProjectSection.vue';
+import AboutMe from './components/AboutMe.vue';
 </script>
 
 <template>
@@ -10,6 +11,7 @@ import ProjectSection from './components/ProjectSection.vue';
   <!-- TODO: Add meta description and keywords plus other SEO relevant tags like image in index.html -->
   <!-- TODO: I should not forgot to make a footer!!! -->
   <!-- TODO: Also not forgot about making a clean ABOUT ME section -->
+  <!-- TODO: Make a View Resume download button, I will show it in the header/nav and the about me section -->
 
   <main>
     <div class="backgroundImage relative min-h-screen">
@@ -23,6 +25,7 @@ import ProjectSection from './components/ProjectSection.vue';
     </div>
     <SkillsSection />
     <ProjectSection />
+    <AboutMe />
   </main>
 </template>
 
