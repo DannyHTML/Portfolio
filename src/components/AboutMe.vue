@@ -56,6 +56,8 @@
           </div>
         </div>
         <!-- About me text -->
+        <!-- TODO: Write a bit more about myself here. Why I moved to the UK. Because of family ofcrouse -->
+        <!-- TODO: but that will make it more personal -->
         <div class="mt-14 flex-1 md:mt-0">
           <p>
             I’m a front-end developer with a strong focus on building clean, scalable, and
