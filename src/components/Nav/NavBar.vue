@@ -13,7 +13,12 @@
       <template v-else>
         <DesktopMenu :items="items" />
         <!-- TODO: Upload my CV for this component -->
-        <DownloadButton :padding="'px-1.5 py-2 md:px-3 xl:px-6'"> Download CV </DownloadButton>
+        <DownloadButton
+          download-file-name="Danny_Jager_CV.pdf"
+          :padding="'px-1.5 py-2 md:px-3 xl:px-6'"
+        >
+          Download CV
+        </DownloadButton>
       </template>
     </div>
   </header>

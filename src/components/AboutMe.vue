@@ -84,7 +84,7 @@
           </p>
           <div class="mt-2 flex justify-end">
             <!-- TODO: Upload my CV for this component -->
-            <DownloadButton> Download CV </DownloadButton>
+            <DownloadButton download-file-name="Danny_Jager_CV.pdf"> Download CV </DownloadButton>
           </div>
         </div>
       </div>
