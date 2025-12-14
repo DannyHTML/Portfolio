@@ -35,7 +35,7 @@
           id="email"
           v-model="email"
           class="w-full rounded-md border p-2"
-          placeholder="Email..."
+          placeholder="Email address..."
           type="email"
           name="email"
         />
