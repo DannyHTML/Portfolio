@@ -67,7 +67,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const FORM_ID = 'mgvgqzrv';
+const FORM_ID = import.meta.env.VITE_FORMSPREE_FORM_ID;
 
 const firstName = ref('');
 const lastName = ref('');
@@ -91,8 +91,10 @@ const handleSubmit = async (e: Event) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        email: email.value,
-        message: message.value,
+        'First name': firstName.value,
+        'Last name': lastName.value,
+        Email: email.value,
+        Message: message.value,
       }),
     });
 
