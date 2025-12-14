@@ -22,6 +22,7 @@
 
   <!-- TODO: I NEED TO ADD MORE SKILLS, like Responsvise Design for example etc.... -->
   <!-- TODO: Need to find a better logo for Responsive Web Design, text also to long -->
+  <!-- TODO: Add UX Design in the skills section -->
 
   <!-- Pop-up modal -->
   <Transition
