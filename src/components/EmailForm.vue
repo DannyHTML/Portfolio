@@ -58,8 +58,14 @@
           leave-from-class="opacity-100 translate-y-0"
           leave-to-class="opacity-0 translate-y-2"
         >
-          <div v-if="succeeded" class="absolute -bottom-6.5 flex w-full justify-center">
-            <p class="text-accent">Thank you! Your message has been sent.</p>
+          <div
+            v-if="succeeded || errors.form"
+            class="absolute -bottom-6.5 flex w-full justify-center"
+          >
+            <p v-if="succeeded" class="text-accent">Thank you! Your message has been sent.</p>
+            <p v-else class="text-red-500">
+              {{ errors.form }}
+            </p>
           </div>
         </transition>
       </div>
