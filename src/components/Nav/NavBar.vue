@@ -52,6 +52,10 @@ const items = [
     title: 'About',
     link: '#about',
   },
+  {
+    title: 'Contact',
+    link: '#contact',
+  },
 ];
 
 onMounted(() => {

@@ -9,10 +9,7 @@ import FooterSection from './components/FooterSection.vue';
 </script>
 
 <template>
-  <!-- TODO: I think I keep this layout? -->
   <!-- TODO: Add meta description and keywords plus other SEO relevant tags like image in index.html -->
-  <!-- TODO: I should not forgot to make a footer!!! -->
-  <!-- TODO: Also not forgot about making a clean ABOUT ME section -->
   <!-- TODO: Make a View Resume download button, I will show it in the header/nav and the about me section -->
 
   <main>

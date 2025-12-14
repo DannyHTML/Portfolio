@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary pt-20 pb-10 md:py-20">
+  <div class="bg-primary py-20">
     <div class="container">
       <h2 id="about" class="mb-10 text-center text-5xl font-bold">About Me</h2>
       <div class="md:flex md:gap-20">
