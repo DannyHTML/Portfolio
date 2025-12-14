@@ -41,7 +41,7 @@
         />
       </div>
 
-      <div>
+      <div class="relative">
         <textarea
           id="message"
           v-model="message"
@@ -50,13 +50,25 @@
           placeholder="Your message..."
           required
         ></textarea>
+        <transition
+          enter-active-class="transition duration-300 ease-out"
+          enter-from-class="opacity-0 translate-y-2"
+          enter-to-class="opacity-100 translate-y-0"
+          leave-active-class="transition duration-300 ease-in"
+          leave-from-class="opacity-100 translate-y-0"
+          leave-to-class="opacity-0 translate-y-2"
+        >
+          <div v-if="succeeded" class="absolute -bottom-6.5 flex w-full justify-center">
+            <p class="text-accent">Thank you! Your message has been sent.</p>
+          </div>
+        </transition>
       </div>
       <!-- Honeypot field to prevent spam -->
       <input type="text" name="_gotcha" class="hidden" />
 
       <button
         type="submit"
-        class="cursor-pointer rounded-md bg-green-700 px-4 py-2 font-medium transition hover:bg-green-800 disabled:cursor-not-allowed disabled:bg-green-500"
+        class="mt-5 cursor-pointer rounded-md bg-green-700 px-4 py-2 font-medium transition hover:bg-green-800 disabled:cursor-not-allowed disabled:bg-green-500"
       >
         {{ submitting ? 'Sending...' : 'Send' }}
       </button>
@@ -106,6 +118,10 @@ const handleSubmit = async (e: Event) => {
       lastName.value = '';
       email.value = '';
       message.value = '';
+
+      setTimeout(() => {
+        succeeded.value = false;
+      }, 5000);
     } else {
       // Formspree validation errors
       if (data.errors) {
