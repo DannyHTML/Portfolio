@@ -74,7 +74,7 @@
 
       <button
         type="submit"
-        class="mt-5 cursor-pointer rounded-md bg-green-700 px-4 py-2 font-medium transition hover:bg-green-800 disabled:cursor-not-allowed disabled:bg-green-500"
+        class="mt-5 cursor-pointer rounded-md bg-green-700 px-4 py-2 text-lg font-medium transition hover:bg-green-800 disabled:cursor-not-allowed disabled:bg-green-500"
       >
         {{ submitting ? 'Sending...' : 'Send' }}
       </button>
