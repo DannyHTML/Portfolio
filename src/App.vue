@@ -11,6 +11,7 @@ import FooterSection from './components/FooterSection.vue';
 <template>
   <!-- TODO: Add meta description and keywords plus other SEO relevant tags like image in index.html -->
   <!-- TODO: Make a View Resume download button, I will show it in the header/nav and the about me section -->
+  <!-- TODO: Fix header layout on laptop/small desktop screens -->
 
   <main>
     <div class="backgroundImage relative min-h-screen">
