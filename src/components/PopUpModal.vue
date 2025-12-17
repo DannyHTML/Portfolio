@@ -35,7 +35,6 @@ import { useTemplateRef } from 'vue';
 import { onClickOutside } from '@vueuse/core';
 
 const target = useTemplateRef<HTMLElement>('target');
-console.log(target.value);
 
 onClickOutside(target, () => emit('close'));
 

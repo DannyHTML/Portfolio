@@ -40,8 +40,6 @@ const open = ref(false);
 const isMobile = activeBreakpoint.smaller('md');
 const downloadLink = `${import.meta.env.BASE_URL}cv/Danny_Jager_CV_2025.pdf`;
 
-console.log('Download link:', downloadLink);
-
 const items = [
   {
     title: 'Home',
