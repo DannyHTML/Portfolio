@@ -12,8 +12,8 @@
 
       <template v-else>
         <DesktopMenu :items="items" />
-        <!-- TODO: Upload my CV for this component -->
         <DownloadButton
+          :download-link="'/cv/Danny_Jager_CV_2025.pdf'"
           download-file-name="Danny_Jager_CV.pdf"
           :padding="'px-1.5 py-2 md:px-3 xl:px-6'"
         >
@@ -26,14 +26,17 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 import MobileMenu from './MobileMenu.vue';
 import DesktopMenu from './DesktopMenu.vue';
 import NavigateToTop from '../NavigateToTop.vue';
 import DownloadButton from '../DownloadButton.vue';
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core';
 
-const isMobile = ref(false);
+const activeBreakpoint = useBreakpoints(breakpointsTailwind);
+
 const open = ref(false);
+const isMobile = activeBreakpoint.smaller('md');
 
 const items = [
   {
@@ -52,14 +55,9 @@ const items = [
     title: 'About',
     link: '#about',
   },
+  {
+    title: 'Contact',
+    link: '#contact',
+  },
 ];
-
-onMounted(() => {
-  const checkMobile = () => {
-    isMobile.value = window.innerWidth < 640;
-  };
-
-  checkMobile();
-  window.addEventListener('resize', checkMobile);
-});
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex gap-4 px-5 py-2 text-lg font-medium md:gap-10 md:px-10 lg:text-xl">
+  <ul class="flex gap-4 px-5 py-2 text-lg font-medium lg:gap-10 lg:px-10 lg:text-xl">
     <li v-for="item in items" :key="item.title">
       <a
         :href="item.link"

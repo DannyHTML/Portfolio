@@ -1,6 +1,6 @@
 <template>
-  <footer class="container flex h-14">
-    <div class="flex w-full items-center justify-between text-sm font-medium">
+  <footer class="bg-primary flex h-14">
+    <div class="container flex w-full items-center justify-between text-sm font-medium">
       <div>
         All rights
         <span class="block md:inline"> reserved. </span>

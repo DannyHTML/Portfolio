@@ -4,15 +4,14 @@ import HomeSection from './components/HomeSection.vue';
 import SkillsSection from './components/SkillsSection.vue';
 import ProjectSection from './components/ProjectSection.vue';
 import AboutMe from './components/AboutMe.vue';
+import ContactSection from './components/ContactSection.vue';
 import FooterSection from './components/FooterSection.vue';
 </script>
 
 <template>
-  <!-- TODO: I think I keep this layout? -->
   <!-- TODO: Add meta description and keywords plus other SEO relevant tags like image in index.html -->
-  <!-- TODO: I should not forgot to make a footer!!! -->
-  <!-- TODO: Also not forgot about making a clean ABOUT ME section -->
   <!-- TODO: Make a View Resume download button, I will show it in the header/nav and the about me section -->
+  <!-- TODO: Fix header layout on laptop/small desktop screens -->
 
   <main>
     <div class="backgroundImage relative min-h-screen">
@@ -27,6 +26,7 @@ import FooterSection from './components/FooterSection.vue';
     <SkillsSection />
     <ProjectSection />
     <AboutMe />
+    <ContactSection />
     <FooterSection />
   </main>
 </template>

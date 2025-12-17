@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary pt-20 pb-10 md:py-20">
+  <div class="bg-primary py-20">
     <div class="container">
       <h2 id="about" class="mb-10 text-center text-5xl font-bold">About Me</h2>
       <div class="md:flex md:gap-20">
@@ -62,7 +62,7 @@
           <p>
             I’m a front-end developer with a strong focus on building clean, scalable, and
             user-friendly web experiences. Originally self-taught, I later completed a
-            government-funded Front-End Development program in the Netherlands through
+            government-funded front-end development program in the Netherlands through
             <a
               href="https://hacklab.frl/stacks/front-end-development"
               class="text-blue-500 underline"
@@ -70,9 +70,10 @@
               rel="noopener noreferrer"
               >Hacklab.frl</a
             >, which gave me a solid foundation and helped refine my development approach. I’ve been
-            living in the UK since October 2025, where I continue to grow both personally and
-            professionally. <br /><br />
-            After completing my training, I joined CanvasCompany.nl B.V. as a Front-End Developer.
+            living in the UK since October 2025, having moved from the Netherlands to be with my
+            wife and start a family, where I continue to grow both personally and professionally.
+            <br /><br />
+            After completing my training, I joined CanvasCompany.nl B.V. as a front-end developer.
             CanvasCompany.nl B.V. is a company that handles everything in-house—from production to
             marketing to IT—which gave me the opportunity to work closely with multiple teams and
             contribute directly to business goals. <br /><br />
@@ -84,7 +85,12 @@
           </p>
           <div class="mt-2 flex justify-end">
             <!-- TODO: Upload my CV for this component -->
-            <DownloadButton download-file-name="Danny_Jager_CV.pdf"> Download CV </DownloadButton>
+            <DownloadButton
+              :download-link="'/cv/Danny_Jager_CV_2025.pdf'"
+              download-file-name="Danny_Jager_CV.pdf"
+            >
+              Download CV
+            </DownloadButton>
           </div>
         </div>
       </div>
@@ -95,7 +101,7 @@
           involvement. I also worked on the integration layer between Magento 2 and PrismicIO using
           PHTML, CSS/Tailwind, XML, and Alpine.js, and implemented front-end features in both
           Magento 1 and Magento 2 when appropriate.
-          <b class="my-4 block"> Some examples of my work include: </b>
+          <strong class="my-4 block"> Some examples of my work include: </strong>
         </p>
         <ul>
           <li class="list-inside list-disc">
