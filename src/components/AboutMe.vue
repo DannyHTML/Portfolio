@@ -85,10 +85,7 @@
           </p>
           <div class="mt-2 flex justify-end">
             <!-- TODO: Upload my CV for this component -->
-            <DownloadButton
-              :download-link="'/cv/Danny_Jager_CV_2025.pdf'"
-              download-file-name="Danny_Jager_CV.pdf"
-            >
+            <DownloadButton :download-link="downloadLink" download-file-name="Danny_Jager_CV.pdf">
               Download CV
             </DownloadButton>
           </div>
@@ -147,4 +144,5 @@
 
 <script setup lang="ts">
 import DownloadButton from './DownloadButton.vue';
+const downloadLink = `${import.meta.env.BASE_URL}cv/Danny_Jager_CV_2025.pdf`;
 </script>
