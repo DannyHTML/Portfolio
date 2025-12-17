@@ -15,10 +15,7 @@
         <li v-for="item in items" :key="item.title" class="border-b-2">
           <a :href="item.link" @click="close">{{ item.title }}</a>
         </li>
-        <DownloadButton
-          :download-link="'/cv/Danny_Jager_CV_2025.pdf'"
-          download-file-name="Danny_Jager_CV.pdf"
-        >
+        <DownloadButton :download-link="downloadLink" download-file-name="Danny_Jager_CV.pdf">
           Download CV
         </DownloadButton>
       </ul>
@@ -37,6 +34,8 @@
 
 <script setup lang="ts">
 import DownloadButton from '../DownloadButton.vue';
+
+const downloadLink = `${import.meta.env.BASE_URL}cv/Danny_Jager_CV_2025.pdf`;
 
 interface Item {
   title: string;

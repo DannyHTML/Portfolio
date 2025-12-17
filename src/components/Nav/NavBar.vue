@@ -1,7 +1,7 @@
 <template>
   <header id="home">
     <div class="container flex h-20 items-center justify-between text-white">
-      <img src="../../assets/logo.png" class="w-40" alt="Logo Danny Jager" />
+      <img :src="logo" class="w-40" alt="Logo Danny Jager" />
 
       <template v-if="isMobile">
         <button @click="open = !open">
@@ -13,7 +13,7 @@
       <template v-else>
         <DesktopMenu :items="items" />
         <DownloadButton
-          :download-link="'/cv/Danny_Jager_CV_2025.pdf'"
+          :download-link="downloadLink"
           download-file-name="Danny_Jager_CV.pdf"
           :padding="'px-1.5 py-2 md:px-3 xl:px-6'"
         >
@@ -31,12 +31,16 @@ import MobileMenu from './MobileMenu.vue';
 import DesktopMenu from './DesktopMenu.vue';
 import NavigateToTop from '../NavigateToTop.vue';
 import DownloadButton from '../DownloadButton.vue';
+import logo from '../../assets/logo.png';
 import { breakpointsTailwind, useBreakpoints } from '@vueuse/core';
 
 const activeBreakpoint = useBreakpoints(breakpointsTailwind);
 
 const open = ref(false);
 const isMobile = activeBreakpoint.smaller('md');
+const downloadLink = `${import.meta.env.BASE_URL}cv/Danny_Jager_CV_2025.pdf`;
+
+console.log('Download link:', downloadLink);
 
 const items = [
   {
