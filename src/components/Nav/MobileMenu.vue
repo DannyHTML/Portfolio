@@ -9,6 +9,7 @@
   >
     <div
       v-if="open"
+      ref="target"
       class="bg-secondary drop-shadow-medium-purple fixed top-0 left-0 z-50 flex h-1/2 w-full flex-col items-center justify-center rounded-b-3xl font-medium text-white drop-shadow-lg"
     >
       <ul class="space-y-5 text-center text-xl">
@@ -33,9 +34,15 @@
 </template>
 
 <script setup lang="ts">
+import { useTemplateRef } from 'vue';
+import { onClickOutside } from '@vueuse/core';
 import DownloadButton from '../DownloadButton.vue';
 
 const downloadLink = `${import.meta.env.BASE_URL}cv/Danny_Jager_CV_2025.pdf`;
+
+const target = useTemplateRef('target');
+
+onClickOutside(target, () => close());
 
 interface Item {
   title: string;
