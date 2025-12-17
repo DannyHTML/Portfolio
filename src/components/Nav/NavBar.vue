@@ -12,7 +12,6 @@
 
       <template v-else>
         <DesktopMenu :items="items" />
-        <!-- TODO: Upload my CV for this component -->
         <DownloadButton
           :download-link="'/cv/Danny_Jager_CV_2025.pdf'"
           download-file-name="Danny_Jager_CV.pdf"
