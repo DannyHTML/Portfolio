@@ -42,6 +42,7 @@
       </div>
 
       <div class="relative">
+        <label class="mb-1 block" for="message">Message</label>
         <textarea
           id="message"
           v-model="message"
