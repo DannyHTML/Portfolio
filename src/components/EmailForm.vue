@@ -5,7 +5,7 @@
       @submit="handleSubmit"
     >
       <div>
-        <label class="mb-1 block" for="firstName">First Name</label>
+        <label class="mb-1 block" for="firstName">First name</label>
         <input
           id="firstName"
           v-model="firstName"
@@ -18,7 +18,7 @@
       </div>
 
       <div>
-        <label class="mb-1 block" for="lastName">Last Name</label>
+        <label class="mb-1 block" for="lastName">Last name</label>
         <input
           id="lastName"
           v-model="lastName"
