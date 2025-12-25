@@ -33,7 +33,7 @@ const projects = [
     title: 'Room homepage',
     image: roomHomepageImage,
     description:
-      'Developed a modern, responsive Room homepage using Vue 3 (Composition API) and TypeScript, with Vite for fast builds and optimized development. Styled the interface with TailwindCSS for a clean, responsive design. Implemented component-based architecture with a focus on reusability and maintainability. For the first time, integrated unit and component tests using Vitest, ensuring reliability and quality. The project emphasizes accessibility, modern best practices, and a smooth user experience across devices.',
+      'Developed a modern, responsive Room homepage using Vue 3 and TypeScript, with Vite for fast builds and optimized development. Styled the interface with TailwindCSS for a clean, responsive design. Implemented component-based architecture with a focus on reusability and maintainability. For the first time, integrated unit and component tests using Vitest, ensuring reliability and quality. The project emphasizes accessibility, modern best practices, and a smooth user experience across devices.',
     linkWebsite: 'https://dannyhtml.github.io/Room-homepage/#/',
     linkGithub: 'https://github.com/DannyHTML/Room-homepage',
     iconWebsite: linkRedirectIcon,
