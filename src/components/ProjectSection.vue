@@ -10,6 +10,7 @@
 <script setup lang="ts">
 import ProjectCard from './ProjectCard.vue';
 import weatherNowImage from '../assets/weather-now.png';
+import roomHomepageImage from '../assets/room-homepage-image.png';
 import bookmarkImage from '../assets/bookmark-image.png';
 import eCommerceImage from '../assets/e-commerce-image.png';
 import jobListingImage from '../assets/job-listing-image.png';
@@ -21,7 +22,7 @@ const projects = [
     title: 'Weather now',
     image: weatherNowImage,
     description:
-      'Developed a modern, responsive weather application using Vue 3 (Composition API) and TypeScript with Vite for fast development and optimized builds. Implemented global state management with Pinia and styled the interface using TailwindCSS. The app consumes real-time meteorological data from the Open-Meteo API, offering current weather, forecasts, and a user-friendly layout across all devices. Emphasis was placed on clean architecture, component reusability, and accessibility.',
+      'Developed a modern, responsive weather application using Vue 3 and TypeScript with Vite for fast development and optimized builds. Implemented global state management with Pinia and styled the interface using TailwindCSS. The app consumes real-time meteorological data from the Open-Meteo API, offering current weather, forecasts, and a user-friendly layout across all devices. Emphasis was placed on clean architecture, component reusability, and accessibility.',
     linkWebsite: 'https://dannyhtml.github.io/Weather-app/',
     linkGithub: 'https://github.com/DannyHTML/Weather-app',
     iconWebsite: linkRedirectIcon,
@@ -29,15 +30,26 @@ const projects = [
     id: 1,
   },
   {
+    title: 'Room homepage',
+    image: roomHomepageImage,
+    description:
+      'Developed a modern, responsive Room homepage using Vue 3 (Composition API) and TypeScript, with Vite for fast builds and optimized development. Styled the interface with TailwindCSS for a clean, responsive design. Implemented component-based architecture with a focus on reusability and maintainability. For the first time, integrated unit and component tests using Vitest, ensuring reliability and quality. The project emphasizes accessibility, modern best practices, and a smooth user experience across devices.',
+    linkWebsite: 'https://dannyhtml.github.io/Room-homepage/#/',
+    linkGithub: 'https://github.com/DannyHTML/Room-homepage',
+    iconWebsite: linkRedirectIcon,
+    iconGithub: githubIcon,
+    id: 2,
+  },
+  {
     title: 'Bookmark landing page',
     image: bookmarkImage,
     description:
-      'This project was built using Vite, Vue 3, TypeScript, and Tailwind CSS. The landing page featuresa fully responsive design, including an elegant mobile navigation menu. The “Features” section is implemented using Vue Router, and the extensions and FAQs are managed through a JSON file rather than being hard-coded, making them easier to maintain and update.',
+      'This project was built using Vite, Vue 3, TypeScript, and Tailwind CSS. The landing page features a fully responsive design, including an elegant mobile navigation menu. The “Features” section is implemented using Vue Router, and the extensions and FAQs are managed through a JSON file rather than being hard-coded, making them easier to maintain and update.',
     linkWebsite: 'https://dannyhtml.github.io/Bookmark-landing-page/#/',
     linkGithub: 'https://github.com/DannyHTML/Bookmark-landing-page',
     iconWebsite: linkRedirectIcon,
     iconGithub: githubIcon,
-    id: 2,
+    id: 3,
   },
   {
     title: 'E-commerce',
@@ -48,7 +60,7 @@ const projects = [
     linkGithub: 'https://github.com/DannyHTML/E-commerce',
     iconWebsite: linkRedirectIcon,
     iconGithub: githubIcon,
-    id: 3,
+    id: 4,
   },
   {
     title: 'Job-listing',
@@ -59,7 +71,7 @@ const projects = [
     linkGithub: 'https://github.com/DannyHTML/Job-listings',
     iconWebsite: linkRedirectIcon,
     iconGithub: githubIcon,
-    id: 4,
+    id: 5,
   },
 ];
 </script>
