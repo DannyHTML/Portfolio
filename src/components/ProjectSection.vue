@@ -16,6 +16,7 @@ import eCommerceImage from '../assets/e-commerce-image.png';
 import jobListingImage from '../assets/job-listing-image.png';
 import linkRedirectIcon from '../assets/link-redirect-icon.svg';
 import githubIcon from '../assets/github-logo.svg';
+import multiStepFormImage from '../assets/multi-step-form.png';
 
 const projects = [
   {
@@ -30,26 +31,37 @@ const projects = [
     id: 1,
   },
   {
+    title: 'Multi-step form',
+    image: multiStepFormImage,
+    description:
+      'Built a dynamic, responsive multi-step subscription form using Vue 3 and TypeScript, with Vite for fast, optimized development. Styled with TailwindCSS for a clean, mobile-first design and implemented Pinia with persisted state, ensuring users’ progress is saved across page reloads. Utilized Vue Router with route guards and clean URLs for smooth navigation between steps, enhancing the user experience. The project emphasizes accessibility, interactive form validation, and a maintainable, component-based architecture.',
+    linkWebsite: 'https://dannyhtml.github.io/Multi-step-form/signup/select-plan',
+    linkGithub: 'https://github.com/DannyHTML/Multi-step-form',
+    iconWebsite: linkRedirectIcon,
+    iconGithub: githubIcon,
+    id: 2,
+  },
+  {
     title: 'Room homepage',
     image: roomHomepageImage,
     description:
       'Developed a modern, responsive Room homepage using Vue 3 and TypeScript, with Vite for fast builds and optimized development. Styled the interface with TailwindCSS for a clean, responsive design. Implemented component-based architecture with a focus on reusability and maintainability. For the first time, integrated unit and component tests using Vitest, ensuring reliability and quality. The project emphasizes accessibility, modern best practices, and a smooth user experience across devices.',
-    linkWebsite: 'https://dannyhtml.github.io/Room-homepage/#/',
+    linkWebsite: 'https://dannyhtml.github.io/Room-homepage/',
     linkGithub: 'https://github.com/DannyHTML/Room-homepage',
     iconWebsite: linkRedirectIcon,
     iconGithub: githubIcon,
-    id: 2,
+    id: 3,
   },
   {
     title: 'Bookmark landing page',
     image: bookmarkImage,
     description:
       'This project was built using Vite, Vue 3, TypeScript, and Tailwind CSS. The landing page features a fully responsive design, including an elegant mobile navigation menu. The “Features” section is implemented using Vue Router, and the extensions and FAQs are managed through a JSON file rather than being hard-coded, making them easier to maintain and update.',
-    linkWebsite: 'https://dannyhtml.github.io/Bookmark-landing-page/#/',
+    linkWebsite: 'https://dannyhtml.github.io/Bookmark-landing-page',
     linkGithub: 'https://github.com/DannyHTML/Bookmark-landing-page',
     iconWebsite: linkRedirectIcon,
     iconGithub: githubIcon,
-    id: 3,
+    id: 4,
   },
   {
     title: 'E-commerce',
@@ -60,7 +72,7 @@ const projects = [
     linkGithub: 'https://github.com/DannyHTML/E-commerce',
     iconWebsite: linkRedirectIcon,
     iconGithub: githubIcon,
-    id: 4,
+    id: 5,
   },
   {
     title: 'Job-listing',
@@ -71,7 +83,7 @@ const projects = [
     linkGithub: 'https://github.com/DannyHTML/Job-listings',
     iconWebsite: linkRedirectIcon,
     iconGithub: githubIcon,
-    id: 5,
+    id: 6,
   },
 ];
 </script>
