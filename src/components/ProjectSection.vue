@@ -34,7 +34,7 @@ const projects = [
     title: 'Multi-step form',
     image: multiStepFormImage,
     description:
-      'Built a dynamic, responsive multi-step subscription form using Vue 3 and TypeScript, with Vite for fast, optimized development. Styled with TailwindCSS for a clean, mobile-first design and implemented Pinia with persisted state, ensuring users’ progress is saved across page reloads. Utilized Vue Router with route guards and clean URLs for smooth navigation between steps, enhancing the user experience. The project emphasizes accessibility, interactive form validation, and a maintainable, component-based architecture.',
+      'Built a dynamic, responsive multi-step subscription form using Vue 3 and TypeScript, with Vite for fast, optimized development. Styled with TailwindCSS for a clean, mobile-first design and implemented Pinia with persisted state, ensuring users progress is saved across page reloads. Utilized Vue Router with route guards and clean URLs for smooth navigation between steps, enhancing the user experience. The project emphasizes accessibility, interactive form validation, and a maintainable, component-based architecture.',
     linkWebsite: 'https://dannyhtml.github.io/Multi-step-form/signup/select-plan',
     linkGithub: 'https://github.com/DannyHTML/Multi-step-form',
     iconWebsite: linkRedirectIcon,
